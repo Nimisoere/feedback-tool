@@ -89,7 +89,7 @@ The repo uses default lint provided with `create-next-app` in addition to basic 
 
 Future direction, would include implementing more details linting. e.g. adding prettier rules, adopting `air-bnb` lint rules.
 
-## Testing
+## Testing
 
 This repo uses jest for test. Test are placed alongside their related components for better discoverability. 
 
