@@ -1,12 +1,14 @@
 import React from 'react'
 import FeedbackForm from '../src/components/FeedbackForm/FeedbackForm'
 import Layout from '../src/components/Layout/Layout'
+import Seo from '../src/components/Seo'
 
 type Props = {}
 
 const index = (props: Props) => {
   return (
     <Layout>
+      <Seo title='Give Feedback' />
       <div className='py-10'>
         <div className='container max-w-3xl mx-auto'>
           <div className='mb-8'>
