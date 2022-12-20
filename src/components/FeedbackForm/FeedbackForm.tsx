@@ -26,6 +26,14 @@ interface FEEDBACK_INPUT {
   rating: number
 }
 
+interface FEEDBACK_REQUEST {
+  name: string;
+  email: string;
+  comment: string;
+  rating: number;
+  createdAt: Date;
+}
+
 const FeedbackForm: React.FC = () => {
   const router = useRouter()
 
@@ -35,15 +43,20 @@ const FeedbackForm: React.FC = () => {
   const { loading, error, postFeedback } = usePostFeedback()
 
   const submit = (data: FEEDBACK_INPUT) => {
-    postFeedback<FEEDBACK_INPUT>({
-      ...data
+    postFeedback<FEEDBACK_REQUEST>({
+      ...data,
+      createdAt: new Date(),
     }, () => router.push("/view-feedback"))
   }
 
   return (
     <form onSubmit={handleSubmit(submit)}>
       {
-        error && <div className="bg-red-100 border-2 border-red-200 items-center rounded-lg w-full flex justify-between p-4">{error?.message || "Unable to submit your feedback"}</div>
+        error && (
+          <div className="alert-danger">
+            {error?.message || "Unable to submit your feedback"}
+          </div>
+        )
       }
       <div className='flex flex-row gap-8 flex-wrap sm:flex-nowrap'>
         <div className='w-1/3'>
@@ -90,7 +103,7 @@ const FeedbackForm: React.FC = () => {
         </div>
       </div>
       <div className='flex justify-end'>
-        <button disabled={loading} className='bg-cyan-400 active:bg-cyan-600 focus:outline-none focus:ring focus:ring-cyan-300 hover:bg-cyan-500 py-2 px-8 rounded-lg font-semibold' type='submit'>
+        <button disabled={loading} className='btn-primary' type='submit'>
           Submit{!!loading && "ing ..."}
         </button>
       </div>

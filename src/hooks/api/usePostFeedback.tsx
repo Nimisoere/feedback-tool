@@ -21,9 +21,12 @@ const usePostFeedback = <SubmitResponse,>() => {
   const postFeedback = async <RequestBody,>(body: RequestBody, callback?: (response: SubmitResponse) => void) => {
     try {
       setLoading(true)
-      const response = await fetcher(`${API_URLS.GET_FEEDBACK}?sortBy=createdAt&order=desc`, {
+      const response = await fetcher(`${API_URLS.GET_FEEDBACK}`, {
         method: "POST",
-        body: JSON.stringify(body)
+        body: JSON.stringify(body),
+        headers: {
+          "Content-Type": "application/json"
+        }
       })
       setLoading(false)
       setResponse(response)

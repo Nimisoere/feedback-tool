@@ -7,13 +7,12 @@ export type FeedbackResponse = {
   createdAt: Date
   email: string
   id: string;
-  location: string;
   name: string
-  rating: string
+  rating: number
 }
 
 const useGetFeedBack = () => {
-  const { data, error, isLoading, mutate } = useSWR<FeedbackResponse[]>(API_URLS.GET_FEEDBACK, fetcher)
+  const { data, error, isLoading, mutate } = useSWR<FeedbackResponse[]>(`${API_URLS.GET_FEEDBACK}?_sort=createdAt&_order=desc`, fetcher)
   return {
     feedbacks: data,
     isLoading,

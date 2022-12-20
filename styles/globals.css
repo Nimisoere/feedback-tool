@@ -2,3 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .btn-primary {
+    @apply bg-cyan-400 active:bg-cyan-600 focus:outline-none focus:ring focus:ring-cyan-300 hover:bg-cyan-500 py-2 px-8 rounded-lg font-semibold;
+  }
+  .btn-plain {
+    @apply hover:bg-cyan-400 rounded-lg py-2 px-4 font-medium
+  }
+  .btn-warning {
+    @apply bg-yellow-400 active:bg-yellow-600 focus:outline-none focus:ring focus:ring-yellow-300 hover:bg-yellow-500 py-2 px-8 rounded-lg font-semibold
+  }
+  .btn-danger {
+    @apply bg-red-400 active:bg-red-600 focus:outline-none focus:ring focus:ring-red-300 hover:bg-red-500 py-2 px-8 rounded-lg font-semibold
+  }
+
+  .alert-danger {
+    @apply bg-red-100 border-2 border-red-200 items-center rounded-lg w-full flex justify-between p-4
+  }
+
+  .alert-warning {
+    @apply bg-yellow-100 border-2 border-yellow-200 items-center rounded-lg w-full flex justify-between p-4
+  }
+}
