@@ -6,7 +6,7 @@ type Props = {
 }
 
 const Feedback = React.memo(function Feedback({ feedback }: Props) {
-  const datestring = new Date(feedback.createdAt)?.toDateString()
+  const datestring = new Date(feedback.createdAt)?.toLocaleString()
   return (
     <article key={feedback.id} className='flex flex-col mb-4'>
       <div className="font-medium text-lg mb-2 text-black">
