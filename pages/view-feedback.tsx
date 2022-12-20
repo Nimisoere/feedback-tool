@@ -13,8 +13,8 @@ const index = (props: Props) => {
       <Seo title='View Feedback' />
       <div className='py-10'>
         <div className='container max-w-3xl mx-auto'>
-          <div className='mb-8 flex justify-between'>
-            <h1 className='font-medium text-2xl'>Feedback Results</h1>
+          <div className='mb-8 flex flex-wrap justify-between'>
+            <h1 className='font-medium text-2xl mb-4 sm:mb-0'>Feedback Results</h1>
             <Link href={"/"} className='btn-primary'>
               <span>&#8592;</span> Back for feedback form
             </Link>

@@ -20,10 +20,10 @@ const Input: React.FC<Omit<RenderInputProps, "label">> = React.forwardRef<HTMLIn
         const step = rangeInputProps?.step || 1
 
         return (
-          <div className='flex flex-col'>
+          <div className='flex flex-wrap sm:flex-col'>
             {
               range(min, max, step)?.map((count) => (
-                <div className='text-slate-400' key={`range-${count}-${id}`}>
+                <div className='text-slate-400 w-full' key={`range-${count}-${id}`}>
                   <input ref={ref} id={`range-${count}-${id}`} className="hidden peer" type="radio" {...props} value={count} />
                   <label className='cursor-pointer text-sm peer peer-checked:text-yellow-400' htmlFor={`range-${count}-${id}`}>
                     <span className='text-2xl'>&#11089;</span> ({count} {count === 1 ? "star" : "stars"})

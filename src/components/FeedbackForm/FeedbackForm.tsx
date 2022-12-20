@@ -59,7 +59,7 @@ const FeedbackForm: React.FC = () => {
         )
       }
       <div className='flex flex-row gap-8 flex-wrap sm:flex-nowrap'>
-        <div className='w-1/3'>
+        <div className='w-full sm:w-1/3'>
           <div className='flex flex-col'>
             <RenderInput
               id="name"
@@ -88,7 +88,7 @@ const FeedbackForm: React.FC = () => {
             />
           </div>
         </div>
-        <div className='w-2/3'>
+        <div className='w-full sm:w-2/3'>
           <RenderInput
             id="comment"
             label="Comment"
@@ -103,7 +103,7 @@ const FeedbackForm: React.FC = () => {
         </div>
       </div>
       <div className='flex justify-end'>
-        <button disabled={loading} className='btn-primary' type='submit'>
+        <button disabled={loading} className='btn-primary w-full sm:w-auto' type='submit'>
           Submit{!!loading && "ing ..."}
         </button>
       </div>
