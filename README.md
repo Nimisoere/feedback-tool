@@ -1,34 +1,106 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Context
+
+This repo contains an application used to collect and display feeback along with data visualisation of feedback distribution.
+
 ## Getting Started
+
+### Installing Dependencies
+To install all dependencies, run `npm instal`:
+
+Recommended node version: >= 18
+
+```bash
+npm install
+```
+
+View the [core dependencies section](#core-dependencies) for more details on dependencies
+
+### Starting the client
 
 First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+### Starting the server
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Feedback is served using a static JSON server. The server reads and write from a JSON file. To start up the server. Run the command below
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```bash
+npm run start:server
+```
+## Features and Functionality
 
-## Learn More
+- Users are able to enter feedback from the home page
+- Users are able to view a bbar char showing distribution of feedback
+- Users are able to view a list of feedback
 
-To learn more about Next.js, take a look at the following resources:
+## Core Dependencies
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The following packages are core this repos functionality:
+### Form library
+ **react-hook-form (>= v7)**: Reduces the amount of code you need to write while removing unnecessary re-renders
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Data validation
+ **yup (>= v0.32)**: Yup is a schema builder for runtime value parsing and validation
 
-## Deploy on Vercel
+### Chart library
+**chart.js (>= v4.1)**: Popular open source JS charting library
+**react-chartjs-2 (>= v5.1)**: React components for chart.js
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Data Fetching
+**swr (>= v2)**: Lightweight data fetching library, built by the next JS team. Handles request caching and data revalidation 
+
+### Styling
+**tailwindcss (>= v3.2)**: Enable a utility first approach to styling and provides pseudo and directive classes out of the box. Also enables abstracting of re-useable styles into components
+
+## Project Structure
+
+### Pages
+
+The pages directory contains pages views. A page is composed of HTML markup and re-useable components
+
+### Styles
+
+The style folder contains our global styles, along side global component styles (e.g. btn-primary)
+
+### Components
+
+Components are re-useable pieces of UI, that can be used within other components or in a page. (e.g. Layouts, Forms, Buttons)
+
+
+### hooks
+
+Hooks contains re-useable logic of a component that can be used in components (e.g. data fetching logic)
+
+### Utils
+
+Utils contains re-useable pure functions and objects
+
+## Linting
+
+The repo uses default lint provided with `create-next-app` in addition to basic prettier linting. 
+
+Future direction, would include implementing more details linting. e.g. adding prettier rules, adopting `air-bnb` lint rules.
+
+## Testing
+
+This repo uses jest for test. Test are placed alongside their related components for better discoverability. 
+
+Snapshot test exists for components to improve regression and ensure that components are always the same given the same props.
+
+Future direction would include improving tests written in the project.
+
+## Technical Debt
+
+The following areas of improvements have been indentified:
+- Paginate feedback results
+- Add restrictions to number of feedback provided per user
+- Improve star rating component
+- Increase test coverage

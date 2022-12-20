@@ -1,0 +1,155 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`View Feedback page should match snapshot 1`] = `
+<div>
+  <div
+    class="min-h-screen flex flex-col items-stretch"
+  >
+    <header
+      class="w-full sticky top-0 z-10 shadow bg-white sm:h-20 py-4 sm:py-0 h-auto flex items-center transition-all duration-500"
+    >
+      <div
+        class="container mx-auto flex flex-wrap justify-between"
+      >
+        <div>
+          <a
+            class="font-bold text-2xl"
+            href="/"
+          >
+            FEEDr.
+          </a>
+        </div>
+        <nav
+          class="gap-4 sm:w-auto w-full flex justify-between"
+        >
+          <a
+            class="btn-plain"
+            href="/"
+          >
+            Give feedback
+          </a>
+          <a
+            class="btn-plain"
+            href="/view-feedback"
+          >
+            View feedback
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main
+      class="flex-grow"
+    >
+      <div
+        class="py-10"
+      >
+        <div
+          class="container max-w-3xl mx-auto"
+        >
+          <div
+            class="mb-8 flex flex-wrap justify-between"
+          >
+            <h1
+              class="font-medium text-2xl mb-4 sm:mb-0"
+            >
+              Feedback Results
+            </h1>
+            <a
+              class="btn-primary"
+              href="/"
+            >
+              <span>
+                ←
+              </span>
+               Back for feedback form
+            </a>
+          </div>
+          <div
+            class="flex flex-col"
+          >
+            <div
+              class="mb-12"
+            >
+              <div
+                class="animate-pulse"
+                role="status"
+              >
+                <div
+                  class="h-2.5 bg-gray-200 rounded-full max-w-[250px] mb-4"
+                />
+                <div
+                  class="h-2 bg-gray-200 rounded-full max-w-[360px] mb-2.5"
+                />
+                <div
+                  class="h-2 bg-gray-200 rounded-full mb-2.5"
+                />
+                <div
+                  class="h-2 bg-gray-200 rounded-full max-w-[330px] mb-2.5"
+                />
+                <div
+                  class="h-2 bg-gray-200 rounded-full max-w-[300px] mb-2.5"
+                />
+                <div
+                  class="h-2 bg-gray-200 rounded-full max-w-[360px]"
+                />
+                <span
+                  class="sr-only"
+                >
+                  Loading...
+                </span>
+              </div>
+            </div>
+            <div
+              class="mb-12"
+            >
+              <div
+                class="flex flex-col"
+              >
+                <div>
+                  <div
+                    class="mb-8"
+                  >
+                    <h2
+                      class="font-medium text-2xl"
+                    >
+                      Latest Comments
+                    </h2>
+                  </div>
+                  <div
+                    class="animate-pulse"
+                    role="status"
+                  >
+                    <div
+                      class="h-2.5 bg-gray-200 rounded-full max-w-[250px] mb-4"
+                    />
+                    <div
+                      class="h-2 bg-gray-200 rounded-full max-w-[360px] mb-2.5"
+                    />
+                    <div
+                      class="h-2 bg-gray-200 rounded-full mb-2.5"
+                    />
+                    <div
+                      class="h-2 bg-gray-200 rounded-full max-w-[330px] mb-2.5"
+                    />
+                    <div
+                      class="h-2 bg-gray-200 rounded-full max-w-[300px] mb-2.5"
+                    />
+                    <div
+                      class="h-2 bg-gray-200 rounded-full max-w-[360px]"
+                    />
+                    <span
+                      class="sr-only"
+                    >
+                      Loading...
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+`;

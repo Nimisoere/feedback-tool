@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "test": "jest --watch",
     "start:server": "npx json-server -p 4000 public/db.json "
   },
   "dependencies": {
@@ -27,8 +28,12 @@
     "yup": "^0.32.11"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
     "autoprefixer": "^10.4.13",
     "eslint-config-prettier": "^8.5.0",
+    "jest": "^29.3.1",
+    "jest-environment-jsdom": "^29.3.1",
     "postcss": "^8.4.20",
     "tailwindcss": "^3.2.4"
   }

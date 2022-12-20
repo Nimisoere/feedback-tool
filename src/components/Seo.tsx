@@ -12,7 +12,6 @@ type Props = {
 const Seo = ({ title, noFollow, noIndex, description,keywords }: Props) => {
   return (
     <Head>
-      <html lang="en" />
       <title>{title}</title>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       {noIndex && <meta name="robots" content="noIndex" />}

@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Feedback Graph should match snapshot 1`] = `
+<div>
+  <article
+    class="flex flex-col mb-4"
+  >
+    <div
+      class="font-medium text-lg mb-2 text-black"
+    >
+      <p>
+        Nimisoere
+         
+        <span
+          class="text-slate-600 text-sm"
+        >
+          (
+          lawson.nimi@yahoo.com
+          )
+        </span>
+      </p>
+    </div>
+    <div
+      class="flex items-center mb-2"
+    >
+      <span
+        class="text-2xl text-yellow-400"
+      >
+        ⭑
+      </span>
+      <span
+        class="text-2xl text-slate-400"
+      >
+        ⭑
+      </span>
+      <span
+        class="text-2xl text-slate-400"
+      >
+        ⭑
+      </span>
+      <span
+        class="text-2xl text-slate-400"
+      >
+        ⭑
+      </span>
+      <span
+        class="text-2xl text-slate-400"
+      >
+        ⭑
+      </span>
+      <p
+        class="ml-2 text-sm font-medium text-gray-900"
+      >
+        1
+         out of 5
+      </p>
+    </div>
+    <footer
+      class="mb-2 text-sm text-gray-500"
+    >
+      <p>
+        Reviewed on 
+        <time
+          datetime="19/12/2022, 10:48:11"
+        >
+          19/12/2022, 10:48:11
+        </time>
+      </p>
+    </footer>
+    <div
+      class="mb-2 font-light text-gray-500"
+    >
+      lorem
+    </div>
+  </article>
+</div>
+`;

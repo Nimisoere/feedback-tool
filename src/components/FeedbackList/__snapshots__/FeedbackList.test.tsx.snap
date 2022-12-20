@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Feedback Graph should match snapshot 1`] = `
+<div>
+  <div
+    class="flex flex-col"
+  >
+    <div>
+      <div
+        class="mb-8"
+      >
+        <h2
+          class="font-medium text-2xl"
+        >
+          Latest Comments
+        </h2>
+      </div>
+      <div
+        class="animate-pulse"
+        role="status"
+      >
+        <div
+          class="h-2.5 bg-gray-200 rounded-full max-w-[250px] mb-4"
+        />
+        <div
+          class="h-2 bg-gray-200 rounded-full max-w-[360px] mb-2.5"
+        />
+        <div
+          class="h-2 bg-gray-200 rounded-full mb-2.5"
+        />
+        <div
+          class="h-2 bg-gray-200 rounded-full max-w-[330px] mb-2.5"
+        />
+        <div
+          class="h-2 bg-gray-200 rounded-full max-w-[300px] mb-2.5"
+        />
+        <div
+          class="h-2 bg-gray-200 rounded-full max-w-[360px]"
+        />
+        <span
+          class="sr-only"
+        >
+          Loading...
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;

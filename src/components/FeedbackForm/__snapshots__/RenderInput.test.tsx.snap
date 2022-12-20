@@ -1,0 +1,182 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render input should match snapshot - Input 1`] = `
+<div>
+  <div
+    class="flex flex-col mb-8"
+  >
+    <label
+      class="font-medium text-sm"
+    >
+      test
+    </label>
+    <input
+      class="border-slate-300 focus:outline-cyan-400 bg-slate-50 border-2 rounded-md py-2 px-4 "
+      id="test"
+      type="email"
+    />
+  </div>
+</div>
+`;
+
+exports[`Render input should match snapshot - Rating 1`] = `
+<div>
+  <div
+    class="flex flex-col mb-8"
+  >
+    <label
+      class="font-medium text-sm"
+    >
+      test
+    </label>
+    <div
+      class="flex flex-wrap sm:flex-col"
+    >
+      <div
+        class="text-slate-400 w-full"
+      >
+        <input
+          class="hidden peer"
+          id="range-1-test"
+          type="radio"
+          value="1"
+        />
+        <label
+          class="cursor-pointer text-sm peer peer-checked:text-yellow-400"
+          for="range-1-test"
+        >
+          <span
+            class="text-2xl"
+          >
+            ⭑
+          </span>
+           (
+          1
+           
+          star
+          )
+        </label>
+      </div>
+      <div
+        class="text-slate-400 w-full"
+      >
+        <input
+          class="hidden peer"
+          id="range-2-test"
+          type="radio"
+          value="2"
+        />
+        <label
+          class="cursor-pointer text-sm peer peer-checked:text-yellow-400"
+          for="range-2-test"
+        >
+          <span
+            class="text-2xl"
+          >
+            ⭑
+          </span>
+           (
+          2
+           
+          stars
+          )
+        </label>
+      </div>
+      <div
+        class="text-slate-400 w-full"
+      >
+        <input
+          class="hidden peer"
+          id="range-3-test"
+          type="radio"
+          value="3"
+        />
+        <label
+          class="cursor-pointer text-sm peer peer-checked:text-yellow-400"
+          for="range-3-test"
+        >
+          <span
+            class="text-2xl"
+          >
+            ⭑
+          </span>
+           (
+          3
+           
+          stars
+          )
+        </label>
+      </div>
+      <div
+        class="text-slate-400 w-full"
+      >
+        <input
+          class="hidden peer"
+          id="range-4-test"
+          type="radio"
+          value="4"
+        />
+        <label
+          class="cursor-pointer text-sm peer peer-checked:text-yellow-400"
+          for="range-4-test"
+        >
+          <span
+            class="text-2xl"
+          >
+            ⭑
+          </span>
+           (
+          4
+           
+          stars
+          )
+        </label>
+      </div>
+      <div
+        class="text-slate-400 w-full"
+      >
+        <input
+          class="hidden peer"
+          id="range-5-test"
+          type="radio"
+          value="5"
+        />
+        <label
+          class="cursor-pointer text-sm peer peer-checked:text-yellow-400"
+          for="range-5-test"
+        >
+          <span
+            class="text-2xl"
+          >
+            ⭑
+          </span>
+           (
+          5
+           
+          stars
+          )
+        </label>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Render input should match snapshot - Text Area 1`] = `
+<div>
+  <div
+    class="flex flex-col mb-8"
+  >
+    <label
+      class="font-medium text-sm"
+    >
+      test
+    </label>
+    <textarea
+      class="border-slate-300 focus:outline-cyan-400 bg-slate-50 border-2 rounded-md py-2 px-4 "
+      id="test"
+      rows="10"
+    />
+  </div>
+</div>
+`;
