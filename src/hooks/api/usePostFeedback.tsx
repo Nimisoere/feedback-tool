@@ -1,10 +1,8 @@
 import * as React from "react";
-
-import useSWR from 'swr'
 import { fetcher } from '../../utils/api/api.utils'
 import { API_URLS } from '../../utils/api/endpoints'
 
-const usePostFeedback = <SubmitResponse,>() => {
+export const usePostFeedback = <SubmitResponse,>() => {
   const [loading, setLoading] = React.useState<boolean>(false);
   const [error, setError] = React.useState<any>(null);
   const [response, setResponse] = React.useState<SubmitResponse | null | undefined>(null);

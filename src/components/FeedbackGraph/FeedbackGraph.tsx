@@ -8,7 +8,7 @@ import {
   Tooltip,
 } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
-import useGetFeedBack from '../../hooks/api/useGetFeedBack';
+import { useGetFeedBack } from '../../hooks/api/useGetFeedBack';
 import { generateChartObject } from './graph.utils';
 import Skeleton from '../common/Skeleton';
 

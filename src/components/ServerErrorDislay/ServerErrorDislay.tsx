@@ -7,7 +7,7 @@ type Props = {}
 const ServerErrorDislay = (props: Props) => {
   return (
     <Layout>
-      <div className="flex flex-col items-center text-center container mx-auto py-24">
+      <div data-testid='server-error' className="flex flex-col items-center text-center container mx-auto py-24">
         <h1 className="font-semibold font-serif text-4xl text-neutral-400 mb-8">
           500 | Oops!
         </h1>

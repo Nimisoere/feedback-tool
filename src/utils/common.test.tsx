@@ -4,10 +4,10 @@ import { mockfeedback } from "./test/mocks";
 
 describe("Graph utilities", () => {
   it("should group graph data", async () => {
-    const groupedData = (groupBy(mockfeedback, "comment"))
+    const groupedData = (groupBy(mockfeedback, "rating"))
     expect(Object.keys(groupedData)?.length).toBe(3);
     expect(groupedData["1"]?.length).toBe(1);
-    expect(groupedData["2"]?.length).toBe(4);
+    expect(groupedData["2"]?.length).toBe(3);
     expect(groupedData["3"]?.length).toBe(2);
   });
   it("should return a range", async () => {

@@ -14,6 +14,6 @@ describe("Feedback Graph", () => {
         <Child />
       </ErrorBoundary>
     );
-    expect(container).toMatchSnapshot();
+    expect(screen.getByTestId('server-error')).toBeVisible();
   });
 });

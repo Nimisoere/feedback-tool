@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Feedback Graph should match snapshot 1`] = `
+exports[`Feedback Graph - Fetched Results should match snapshot 1`] = `
 <div>
   <div
     class="animate-pulse"
@@ -29,6 +29,31 @@ exports[`Feedback Graph should match snapshot 1`] = `
     >
       Loading...
     </span>
+  </div>
+</div>
+`;
+
+exports[`Feedback Graph - Loading should match snapshot 1`] = `
+<div>
+  <div
+    class="w-full"
+    role="status"
+  >
+    <div
+      class="alert-danger"
+    >
+      <span
+        class="font-medium"
+      >
+        invalid json response body at  reason: Unexpected end of JSON input
+      </span>
+      <button
+        class="btn-danger"
+        type="button"
+      >
+        Try again
+      </button>
+    </div>
   </div>
 </div>
 `;
